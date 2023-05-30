@@ -61,7 +61,7 @@ $stmt = $pdo->prepare($sql);
 // バインド変数を設定（関数の数だけ設定が必要）
 $stmt->bindValue(':title', $title, PDO::PARAM_STR);
 $stmt->bindValue(':toko', $toko, PDO::PARAM_STR);
-$stmt->bindValue(':img_name', $img_name_new, PDO::PARAM_STR); // 修正した部分
+$stmt->bindValue(':img_name', $img_name_new, PDO::PARAM_STR);
 
 // SQL実行（実行に失敗すると `sql error ...` が出力される）
 try {
